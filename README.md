@@ -24,7 +24,9 @@ This project involves building a data pipeline to ingest NYC taxi trip data, pro
 - **Compute Engine VM**: Run an ingestion script on a VM.
 - **Process**: The script moves one Parquet file from each of the 4 folders in the `raw-first-try` bucket to the corresponding folders in the `d2k-raw` bucket every 10 minutes.
 
-*d2k-raw and logs IMAGE*
+![d2k-raw](https://github.com/user-attachments/assets/079f3e15-a59d-48e2-a7a5-a327763244ef)
+
+* logs IMAGE*
 
 ### Step 4: Triggering PySpark Job
 - **Objective**: Trigger a PySpark ETL job on Google Cloud Dataproc upon detecting a new object in the `d2k-raw` bucket.
