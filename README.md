@@ -16,6 +16,9 @@ This project involves building a data pipeline to ingest NYC taxi trip data, pro
 
 ![Cloud Storage](https://github.com/user-attachments/assets/06893d0d-8549-44c8-9b6c-9fa4d0417efe)
 
+![raw-first-try](https://github.com/user-attachments/assets/19726796-4820-4f64-80a0-f2a9794794b5)
+
+
 ### Step 3: Ingestion Code
 - **Objective**: Ingest Parquet files from the `raw-first-try` bucket and store them in another GCS bucket named `d2k-raw`.
 - **Compute Engine VM**: Run an ingestion script on a VM.
