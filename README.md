@@ -26,26 +26,39 @@ This project involves building a data pipeline to ingest NYC taxi trip data, pro
 
 ![d2k-raw](https://github.com/user-attachments/assets/079f3e15-a59d-48e2-a7a5-a327763244ef)
 
-* logs IMAGE*
+![Logs](https://github.com/user-attachments/assets/782aa153-a7ca-4c2d-b92c-b35b99da7b81)
 
 ### Step 4: Triggering PySpark Job
 - **Objective**: Trigger a PySpark ETL job on Google Cloud Dataproc upon detecting a new object in the `d2k-raw` bucket.
 - **Cloud Functions**: A Cloud Function is triggered to start the PySpark job on Dataproc when a new file is added to the `d2k-raw` bucket.
 
-*cloud function  and cloud monitoring IMAGE*
+![ClodFunctions](https://github.com/user-attachments/assets/5f2341c9-24d0-4dd2-b545-bcb138202504)
+
+![CloudMonitoring](https://github.com/user-attachments/assets/0edcd070-4af1-4508-bcf9-0b41820a127d)
 
 ### Step 5: ETL Script
 - **Objective**: Process the ingested Parquet files using PySpark and store the processed data.
 - **Dataproc**: The PySpark script is deployed on Dataproc.
 - **Output**: The processed data is stored in BigQuery and also as CSV files in the GCS bucket named `d2k-processed`.
 
-*dataproc IMAGE*
+![DataprocCluster](https://github.com/user-attachments/assets/922bbb5e-f3e7-4ace-bbb3-5b0f94f29992)
+
+
+![DataProcJobs](https://github.com/user-attachments/assets/96fc8455-1953-4ba9-a445-8ffa8aabca73)
+
+
+
 
 ### Step 6: Storing Processed Data
 - **BigQuery**: The processed data is stored in 4 separate tables within a dataset, each table corresponding to a different schema.
 - **GCS**: The processed data is also stored as CSV files in the `d2k-processed` bucket.
 
-*bigquery and d2k-processed IMAGE*
+![BigQuery](https://github.com/user-attachments/assets/3e48dcf3-aba4-436b-b984-e27505e7d66a)
+
+![Gcs](https://github.com/user-attachments/assets/ab5f04da-665e-4e69-9a9b-3d6819ad28a0)
+
+
+
 
 ### Step 7: Analytical Queries
 - **Objective**: Gain insights from the processed data stored in BigQuery.
